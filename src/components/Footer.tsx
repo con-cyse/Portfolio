@@ -29,9 +29,9 @@ const SocialIcon = ({ icon }: { icon: string }) => (
 
 const Footer = () => {
   return (
-    <footer className="border-t border-[var(--color-atlantic)] bg-[var(--color-deep-teal)] px-6 py-6">
+    <footer className="border-t border-(--color-atlantic) bg-(--color-deep-teal) px-6 py-6">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 text-center sm:flex-row">
-        <p className="text-sm font-medium text-[var(--color-atlantic)]">
+        <p className="text-sm font-medium text-(--color-atlantic)">
           &copy; 2026 Cyril. All rights reserved.
         </p>
 
@@ -40,7 +40,7 @@ const Footer = () => {
             <a
               key={link.label}
               href={link.href}
-              className="icon-bounce rounded-md p-2 text-[var(--color-atlantic)] transition hover:-translate-y-0.5 hover:bg-[var(--color-sea-white)] hover:text-[var(--color-deep-teal)]"
+              className="icon-bounce inline-flex h-11 w-11 items-center justify-center rounded-md text-(--color-atlantic) transition hover:-translate-y-0.5 hover:bg-(--color-sea-white) hover:text-(--color-deep-teal)"
               aria-label={link.label}
               rel="noopener noreferrer"
               target="_blank"
@@ -50,7 +50,7 @@ const Footer = () => {
           ))}
           <a
             href="#home"
-            className="rounded-md border border-[var(--color-atlantic)] px-3 py-2 text-sm font-semibold text-[var(--color-atlantic)] transition hover:-translate-y-0.5 hover:border-[var(--color-seashell)] hover:text-[var(--color-seashell)]"
+            className="inline-flex min-h-11 items-center rounded-md border border-(--color-atlantic) px-3 py-2 text-sm font-semibold text-(--color-atlantic) transition hover:-translate-y-0.5 hover:border-(--color-seashell) hover:text-(--color-seashell)"
           >
             Back to Top
           </a>

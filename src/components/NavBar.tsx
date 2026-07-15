@@ -57,7 +57,7 @@ const NavBar = () => {
           : 'border-transparent bg-[var(--color-deep-teal)]/95 backdrop-blur'
       }`}
     >
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
         <a
           href="#home"
           className={`text-lg font-bold transition-colors ${
@@ -71,7 +71,7 @@ const NavBar = () => {
 
         <button
           type="button"
-          className={`inline-flex h-10 w-10 items-center justify-center rounded-md border transition md:hidden ${
+          className={`inline-flex h-11 w-11 items-center justify-center rounded-md border transition md:hidden ${
             isScrolled
               ? 'border-[var(--color-sea-white)] text-[var(--color-deep-teal)]'
               : 'border-white/25 text-white'
@@ -126,12 +126,12 @@ const NavBar = () => {
           isOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="mx-auto flex max-w-6xl flex-col px-6 py-3">
+        <div className="mx-auto flex max-w-6xl flex-col px-4 py-3 sm:px-6">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className={`rounded-md px-3 py-3 text-sm font-semibold transition ${
+              className={`inline-flex min-h-11 items-center rounded-md px-3 py-3 text-sm font-semibold transition ${
                 activeSection === link.id
                   ? 'bg-[var(--color-sea-white)] text-[var(--color-deep-teal)]'
                   : 'text-[var(--color-atlantic)] hover:bg-[var(--color-sea-white)] hover:text-[var(--color-deep-teal)]'

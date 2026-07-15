@@ -5,7 +5,7 @@ const contactLinks = [
 ]
 
 const Contact = () => {
-   return (
+  return (
     <section id="contact" className="h-full scroll-mt-24 bg-[var(--color-sea-white)] px-6 py-20">
       <div className="mx-auto max-w-4xl">
         <div>
@@ -37,7 +37,7 @@ const Contact = () => {
               <a
                 key={link.label}
                 href={link.href}
-                className="rounded-md border border-[var(--color-atlantic)] px-4 py-2 text-sm font-semibold text-[var(--color-atlantic)] transition hover:-translate-y-0.5 hover:bg-[var(--color-atlantic)] hover:text-white"
+                className="inline-flex min-h-11 items-center rounded-md border border-[var(--color-atlantic)] px-4 py-2 text-sm font-semibold text-[var(--color-atlantic)] transition hover:-translate-y-0.5 hover:bg-[var(--color-atlantic)] hover:text-white"
                 rel="noopener noreferrer"
                 target="_blank"
               >

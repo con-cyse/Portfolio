@@ -28,12 +28,19 @@ html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
   scroll-padding-top: 5rem;
+  overflow-x: clip;
 }
 
 body {
   margin: 0;
   font-family: var(--font-sans);
   min-height: 100%;
+  overflow-x: clip;
+}
+
+#root {
+  min-height: 100vh;
+  overflow-x: clip;
 }
 
 .mesh-bg {
