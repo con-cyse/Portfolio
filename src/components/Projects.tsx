@@ -18,7 +18,7 @@ const projects: Project[] = [
     stack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
     liveUrl: 'https://obsidiankey.vercel.app/',
     sourceUrl: 'https://github.com/con-cyse/obsidiankey',
-    thumbnailUrl: '/thumbnails/project-1-thumbnail.png',
+    thumbnailUrl: 'thumbnails/project-1-thumbnail.png',
   },
   // {
   //   title: ,
